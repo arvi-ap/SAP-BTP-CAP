@@ -1,0 +1,14 @@
+GET http://localhost:4004/catalog/Books?$top=11
+
+###
+POST http://localhost:4004/catalog/Books
+Content-Type: application/json
+
+{"ID" : 10 , "title":"posting from rest client"}
+
+###
+
+POST http://localhost:4004/catalog/Orders
+Content-Type: application/json
+
+{"book_ID" : 421 , "quantity":10}
